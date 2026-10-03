@@ -1,0 +1,17 @@
+[project]
+name = "triton-kernels"
+version = "0.0.1"
+description = "Learning GPU programming with Triton: puzzles, tutorial kernels, tests, benchmarks, and roofline analysis."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Adrian Yao" }]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.8",
+    "numpy",
+]
+
+[dependency-groups]
+dev = [
+    "modal>=1.1",
+]
